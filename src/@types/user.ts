@@ -1,12 +1,12 @@
-export enum UserTypes {
+export enum UserTypesEnum {
   DEFAULT = 'default',
   PRO = 'pro',
 }
 
-export interface IUser {
+export type TUser = {
   name: string,
   email: string,
   avatar?: string,
   password: string,
-  userType: UserTypes,
+  userType: UserTypesEnum,
 }

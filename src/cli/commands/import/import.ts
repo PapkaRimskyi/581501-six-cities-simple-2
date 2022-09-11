@@ -1,6 +1,6 @@
 import ReadFile from './read-file.js';
 
-import { CliCommand } from '../../@types/cli-command.js';
+import { CliCommand } from '../../interfaces/cli-command.js';
 
 class Import implements CliCommand {
   public name = '--import';

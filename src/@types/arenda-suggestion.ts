@@ -1,4 +1,4 @@
-// import { IUser } from './user.js';
+// import { TUser } from './user.js';
 
 export type PlacePhotoType = string;
 
@@ -9,7 +9,7 @@ export enum ApartmentEnum {
   HOTEL = 'hotel',
 }
 
-export enum ApartmentGoods {
+export enum ApartmentGoodsEnum {
   BREAKFAST = 'Breakfast',
   AIR_CONDITIONING = 'Air conditioning',
   LAPTOP_FRIENDLY_WORKSPACE = 'Laptop friendly workspace',
@@ -19,12 +19,12 @@ export enum ApartmentGoods {
   FRIDGE = 'Fridge',
 }
 
-export interface IPlaceCoords {
+export type TPlaceCoords = {
   latitude: number,
   longitude: number,
 }
 
-export interface IArendaSuggestion {
+export type TArendaSuggestion = {
   name: string,
   description: string,
   createdAt: Date,
@@ -37,7 +37,7 @@ export interface IArendaSuggestion {
   roomAmount: number,
   guestsAmount: number,
   rentPrice: number,
-  apartmentGoods: ApartmentGoods[],
+  apartmentGoods: ApartmentGoodsEnum[],
   author: string,
   coords: string,
 }

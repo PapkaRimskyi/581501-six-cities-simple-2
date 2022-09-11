@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 
-import { CliCommand } from '../@types/cli-command.js';
+import { CliCommand } from '../interfaces/cli-command.js';
 
 class Help implements CliCommand {
   name = '--help';

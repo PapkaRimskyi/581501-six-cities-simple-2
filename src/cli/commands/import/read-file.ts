@@ -1,14 +1,14 @@
 import { readFile } from 'fs/promises';
 
-import { IReadFile } from '../../@types/read-file.js';
-import { ApartmentEnum, ApartmentGoods, IArendaSuggestion } from '../../../@types/arenda-suggestion.js';
+import { IReadFile } from '../../interfaces/read-file.js';
+import { ApartmentEnum, ApartmentGoodsEnum, TArendaSuggestion } from '../../../@types/arenda-suggestion.js';
 
 import { CHARACTER_ENCODING } from '../../const/const.js';
 
 class ReadFile implements IReadFile {
   constructor(public fileName: string) {}
 
-  public async read(): Promise<IArendaSuggestion[]> {
+  public async read(): Promise<TArendaSuggestion[]> {
     try {
       const readedFile = await readFile(this.fileName, { encoding: CHARACTER_ENCODING });
       const result = this.transformToCollection(readedFile);
@@ -39,7 +39,7 @@ class ReadFile implements IReadFile {
           roomAmount: Number(roomAmount),
           guestsAmount: Number(guestsAmount),
           rentPrice: Number(rentPrice),
-          apartmentGoods: apartmentGoods.split(', ') as ApartmentGoods[],
+          apartmentGoods: apartmentGoods.split(', ') as ApartmentGoodsEnum[],
           author,
           coords,
         }
