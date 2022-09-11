@@ -1,0 +1,31 @@
+{
+  "api": {
+    "name": ["Место 1", "Место 2", "Место 3", "Место 4", "Место 5"],
+    "description": ["Описание 1", "Описание 2", "Описание 3", "Описание 4", "Описание 5"],
+    "city": ["Paris", "Cologne", "Brussels", "Amsterdam", "Hamburg", "Dusseldorf"],
+    "imgPreview": ["preview1.jpg", "preview2.jpg", "preview3.jpg", "preview4.jpg"],
+    "placePhotos": [
+      ["apartmentPhoto1.jpg", "apartmentPhoto2.jpg", "apartmentPhoto3.jpg", "apartmentPhoto4.jpg"],
+      ["apartmentPhoto1.jpg", "apartmentPhoto2.jpg", "apartmentPhoto3.jpg"],
+      ["apartmentPhoto1.jpg", "apartmentPhoto2.jpg"]
+    ],
+    "isPremium": [true, false, true, true, false],
+    "rating": [4, 3.5, 4, 5],
+    "apartmentType": ["apartment", "house", "room", "hotel"],
+    "roomAmount": [2, 4, 1, 8],
+    "guestsAmount": [2, 7, 10, 3],
+    "rentPrice": [100, 1500, 2300, 5000],
+    "apartmentGoods": [
+      ["Washer"],
+      ["Breakfast", "Baby seat"],
+      ["Fridge", "Air conditioning"],
+      ["Laptop friendly workspace"]
+    ],
+    "author": ["First Author", "Second Author", "Third Author"],
+    "coords": [
+      ["48.85661 2.351499"],
+      ["50.846557 4.351697"],
+      ["51.225402 6.776314"]
+    ]
+  }
+}
