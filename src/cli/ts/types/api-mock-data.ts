@@ -1,0 +1,16 @@
+export type TMockData = {
+  name: string[],
+  description: string[],
+  city: string[],
+  imgPreview: string[],
+  placePhotos: string[][],
+  isPremium: boolean[],
+  rating: number[],
+  apartmentType: string[],
+  roomAmount: number[],
+  guestsAmount: number[],
+  rentPrice: number[],
+  apartmentGoods: string[][],
+  author: string[],
+  coords: string[][],
+}

@@ -1,4 +1,4 @@
-import { CliCommand } from './@types/cli-command.js';
+import { CliCommand } from './ts/interfaces/cli-command.js';
 
 type CommandsType = {
   [key: string]: CliCommand;
