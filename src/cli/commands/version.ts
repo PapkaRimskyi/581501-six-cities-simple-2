@@ -1,7 +1,7 @@
 import { readFile } from 'fs/promises';
 import chalk from 'chalk';
 
-import { CliCommand  } from '../interfaces/cli-command.js';
+import { CliCommand  } from '../ts/interfaces/cli-command.js';
 
 import { CHARACTER_ENCODING } from '../const/const.js';
 
