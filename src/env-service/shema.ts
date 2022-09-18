@@ -9,7 +9,7 @@ const configSchema = convict<IConfigSchema>({
   PORT: {
     doc: 'Port which will be used during developing',
     format: 'port',
-    default: 3000,
+    default: null,
     env: 'PORT',
   },
   DB_ADDRESS: {
@@ -21,7 +21,7 @@ const configSchema = convict<IConfigSchema>({
   SALT: {
     doc: 'Just a random string (will be used for database in future)',
     format: String,
-    default: 'asdasd2ss1qx',
+    default: null,
     env: 'SALT',
   }
 });

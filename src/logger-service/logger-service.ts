@@ -1,7 +1,9 @@
+import { injectable } from 'inversify';
 import pino, { Logger } from 'pino';
 
 import { ILoggerService } from './interfaces/interface.js';
 
+@injectable()
 class LoggerService implements ILoggerService {
   private logger: Logger;
 
