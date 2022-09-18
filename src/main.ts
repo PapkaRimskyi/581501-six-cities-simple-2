@@ -1,8 +1,10 @@
 import LoggerService from './logger-service/logger-service.js';
 import Application from './application/application.js';
+import EnvService from './env-service/env-service.js';
 
-const logger = new LoggerService();
+const loggerService = new LoggerService();
+const envService = new EnvService(loggerService);
 
-const application = new Application(logger);
+const application = new Application(loggerService, envService);
 
 application.init();
