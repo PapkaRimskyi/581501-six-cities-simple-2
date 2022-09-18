@@ -1,4 +1,4 @@
-import { TMockData } from '../../../ts/types/api-mock-data.js';
+import { TMockData } from '../../../ts/types/api-mock-data.type.js';
 
 export interface IConfigureData {
   get: (data: TMockData, n: string) => void,

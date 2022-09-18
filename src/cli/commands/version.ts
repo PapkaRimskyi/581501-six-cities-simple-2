@@ -1,11 +1,11 @@
 import { readFile } from 'fs/promises';
 import chalk from 'chalk';
 
-import { CliCommand  } from '../ts/interfaces/cli-command.js';
+import { ICliCommand } from '../ts/interfaces/interface.js';
 
 import { CHARACTER_ENCODING } from '../const/const.js';
 
-class Version implements CliCommand {
+class Version implements ICliCommand {
   public name = '--version';
 
   public async run() {

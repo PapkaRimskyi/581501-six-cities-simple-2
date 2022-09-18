@@ -1,7 +1,7 @@
-import { CliCommand } from './ts/interfaces/cli-command.js';
+import { ICliCommand } from './ts/interfaces/interface.js';
 
 type CommandsType = {
-  [key: string]: CliCommand;
+  [key: string]: ICliCommand;
 };
 
 type ParsedCommand = {
@@ -35,7 +35,7 @@ class CliController {
     command.run(...commandArguments);
   }
 
-  public setCommands(commandList: CliCommand[]) {
+  public setCommands(commandList: ICliCommand[]) {
     commandList.forEach((command) => {
       this.commands[command.name] = command;
     });

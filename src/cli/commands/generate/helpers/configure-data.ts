@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 import { getRandomData } from './get-random-data.js';
 
 import { IConfigureData } from '../interfaces/interface.js';
-import { TMockData } from '../../../ts/types/api-mock-data.js';
+import { TMockData } from '../../../ts/types/api-mock-data.type.js';
 
 class ConfigureData implements IConfigureData {
   get(data: TMockData, n: string) {

@@ -1,8 +1,8 @@
 import chalk from 'chalk';
 
-import { CliCommand } from '../ts/interfaces/cli-command.js';
+import { ICliCommand } from '../ts/interfaces/interface.js';
 
-class Help implements CliCommand {
+class Help implements ICliCommand {
   name = '--help';
 
   run() {

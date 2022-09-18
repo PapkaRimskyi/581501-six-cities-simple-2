@@ -1,6 +1,6 @@
 import got from 'got';
 
-import { IGetData } from '../ts/interfaces/get-data.js';
+import { IGetData } from '../ts/interfaces/interface.js';
 
 class GetData implements IGetData {
   constructor(public pathname: string) {}

@@ -1,7 +1,7 @@
 import { createReadStream } from 'fs';
 
-import { IReadFile } from '../interfaces/read-file.js';
-import { ApartmentEnum, ApartmentGoodsEnum } from '../../../ts/types/arenda-suggestion.js';
+import { IReadFile } from '../interfaces/interface.js';
+import { ApartmentEnum, ApartmentGoodsEnum } from '../../../ts/types/arenda-suggestion.type.js';
 
 import { CHARACTER_ENCODING } from '../../../const/const.js';
 

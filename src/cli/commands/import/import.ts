@@ -1,8 +1,8 @@
 import TsvFileReader from './helpers/tsv-file-reader.js';
 
-import { CliCommand } from '../../ts/interfaces/cli-command.js';
+import { ICliCommand } from '../../ts/interfaces/interface.js';
 
-class Import implements CliCommand {
+class Import implements ICliCommand {
   public name = '--import';
 
   public async run(fileName: string) {
